@@ -1,0 +1,13 @@
+  <ion-card>
+    <ion-input  type="number" value="1" #inputx (ionChange)="setX(inputx.value)"> Точка x
+
+    </ion-input>
+    <ion-input  type="number" value="0.1" #inputh (ionChange)="setH(inputh.value)"> Дистанція h
+      
+    </ion-input>
+    <ion-select [(ngModel)]="ch" value="1" interface="popover" (ionChange)="testCh()">
+      <ion-select-option value="1">{{arr[1]}}</ion-select-option>
+      <ion-select-option value="2">{{arr[2]}}</ion-select-option>
+      <ion-select-option value="3">{{arr[3]}}</ion-select-option>
+    </ion-select>
+  </ion-card>
